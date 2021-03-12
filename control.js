@@ -1,41 +1,41 @@
 function submitForm(){
-    var frontDoorStart = document.getElementById('frontDoorStart').value;
-    var frontDoorEnd = document.getElementById('frontDoorEnd').value;
-    var backDoorStart = document.getElementById('backDoorStart').value;
-    var backDoorEnd = document.getElementById('backDoorEnd').value;
-    var garageDoorStart = document.getElementById('garageDoorStart').value;
-    var garageDoorEnd = document.getElementById('garageDoorEnd').value;
-    var drLightStart = document.getElementById('drLightStart').value;
-    var drLightEnd = document.getElementById('drLightEnd').value;
-    var lrLampStart = document.getElementById('lrLampStart').value;
-    var lrLampEnd = document.getElementById('lrLampEnd').value;
-    var b1LampStart = document.getElementById('b1LampStart').value;
-    var b1LampEnd = document.getElementById('b1LampEnd').value;
-    var b2LampStart = document.getElementById('b2LampStart').value;
-    var b2LampEnd = document.getElementById('b2LampEnd').value;
-    var kitchFanStart = document.getElementById('kitchFanStart').value;
-    var kitchFanEnd = document.getElementById('kitchFanEnd').value;
-    var bathFanStart = document.getElementById('bathFanStart').value;
-    var bathFanEnd = document.getElementById('bathFanEnd').value;
-    var washerStart = document.getElementById('washerStart').value;
-    var washerEnd = document.getElementById('washerEnd').value;
-    var dryerStart = document.getElementById('dryerStart').value;
-    var dryerEnd = document.getElementById('dryerEnd').value;
+    var fds = document.getElementById('frontDoorStart').value;
+    var fde = document.getElementById('frontDoorEnd').value;
+    var bds = document.getElementById('backDoorStart').value;
+    var bde = document.getElementById('backDoorEnd').value;
+    var gds = document.getElementById('garageDoorStart').value;
+    var gde = document.getElementById('garageDoorEnd').value;
+    var dls = document.getElementById('drLightStart').value;
+    var dle = document.getElementById('drLightEnd').value;
+    var lls = document.getElementById('lrLampStart').value;
+    var lle = document.getElementById('lrLampEnd').value;
+    var b1ls = document.getElementById('b1LampStart').value;
+    var b1le = document.getElementById('b1LampEnd').value;
+    var b2ls = document.getElementById('b2LampStart').value;
+    var b2le = document.getElementById('b2LampEnd').value;
+    var kfs = document.getElementById('kitchFanStart').value;
+    var kfe = document.getElementById('kitchFanEnd').value;
+    var bfs = document.getElementById('bathFanStart').value;
+    var bfe = document.getElementById('bathFanEnd').value;
+    var ws = document.getElementById('washerStart').value;
+    var we = document.getElementById('washerEnd').value;
+    var ds = document.getElementById('dryerStart').value;
+    var de = document.getElementById('dryerEnd').value;
 
     
 
     let arrayData = []
-        arrayData[0] = [frontDoorStart, frontDoorEnd];
-        arrayData[1] = [backDoorStart, backDoorEnd];
-        arrayData[2] = [garageDoorStart, garageDoorEnd];
-        arrayData[3] = [drLightStart, drLightEnd];
-        arrayData[4] = [lrLampStart, lrLampEnd];
-        arrayData[5] = [b1LampStart, b1LampEnd];
-        arrayData[6] = [b2LampStart, b2LampEnd];
-        arrayData[7] = [kitchFanStart, kitchFanEnd];
-        arrayData[8] = [bathFanStart, bathFanEnd]; 
-        arrayData[9] = [washerStart, washerEnd];
-        arrayData[10] = [dryerStart, dryerEnd];
+        arrayData[0] = [fds, fde];
+        arrayData[1] = [bds, bde];
+        arrayData[2] = [gds, gde];
+        arrayData[3] = [dls, dle];
+        arrayData[4] = [lls, lle];
+        arrayData[5] = [b1ls, b1le];
+        arrayData[6] = [b2ls, b2le];
+        arrayData[7] = [kfs, kfe];
+        arrayData[8] = [bfs, bfe]; 
+        arrayData[9] = [ws, we];
+        arrayData[10] = [ds, de];
 
     window.localStorage.setItem("smartTimings", arrayData);
 }
